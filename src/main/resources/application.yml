@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/yzm?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
+    password: root
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    cluster:
+      nodes: 192.168.31.61:7001,192.168.31.61:7002,192.168.31.61:7003,192.168.31.61:7004,192.168.31.61:7005,192.168.31.61:7006
+
+mybatis:
+  mapper-locations: classpath:com/yzm/mapper/*.xml
+  type-aliases-package: com.yzm.pojo
